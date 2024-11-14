@@ -50,7 +50,7 @@ curve(dnorm(x, mean=media, sd= sigma),xlim=c(80,120), col="red")
 xbar <- function(i){mean(rnorm(4, mean=media, sd=sigma))}
 
 xbar100000 <- sapply(1:100000, xbar)
-hist(xbar100000, freq=FALSE)
+hist(xbar100000, freq=FALSE)  
 
 mean(xbar100000<98)
 
